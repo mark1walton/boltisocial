@@ -382,6 +382,25 @@
         transform: translate3d(0, 300%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
       }
     }
+
+    /* Center Bolti.png hero image on tablets and phones; scale down so nothing is cropped */
+    @media (max-width: 991px) {
+      .section_hero .img.is-hero {
+        inset: auto !important;
+        left: 50% !important;
+        top: 50% !important;
+        min-width: unset !important;
+        width: auto !important;
+        height: auto !important;
+        max-width: 120% !important;
+        max-height: 120% !important;
+        object-fit: contain !important;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
   </style>
   <style>
     html.w-mod-js:not(.w-mod-ix3) :is([animation="word-by-word"], [animation="line-by-line"], [navbar="item"], [arrow-links="item"], [animation="hero-text"], [data-wf-target*='["6902379f243666cbf1c31b67","c8e16a7e-2eb0-1880-33b3-f45d2be2f210"]'], .testimonials_img, .testimonial_item.is-person-1, .testimonial_item.is-person-2, .testimonial_item.is-person-3) {
@@ -650,7 +669,7 @@ a,
       </div>
     </div>
     <main class="main-wrapper">
-      <section class="section_hero"><img src="images/bolti.png" style="min-width: 980px; left: -270px;"
+      <section class="section_hero"><img src="images/Bolti.png" style="min-width: 980px; left: -270px;"
        loading="lazy"
           data-wf-target="[[[&quot;6902379f243666cbf1c31b67&quot;,&quot;c8e16a7e-2eb0-1880-33b3-f45d2be2f210&quot;],[]]]"
           alt="" class="img is-hero" />
